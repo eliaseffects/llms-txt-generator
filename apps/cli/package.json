@@ -1,0 +1,23 @@
+{
+  "name": "llms-txt-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "llms-txt": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm",
+    "test": "vitest run --passWithNoTests",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@llms-txt/core": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "llms-txt-generator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Generate llms.txt and agent.json from URLs or docs folders",
+  "license": "MIT",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter llms-txt-web dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "smoke": "node ./scripts/smoke.mjs"
+  }
+}
