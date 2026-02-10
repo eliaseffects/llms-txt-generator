@@ -128,24 +128,6 @@ Open [http://localhost:3000](http://localhost:3000) and choose:
 
 You will receive `llms-txt-output.zip` with both files.
 
-## Quality gates
-
-Run everything:
-
-```bash
-pnpm smoke
-```
-
-`pnpm smoke` validates:
-
-- install, build, test, lint
-- CLI URL mode generation
-- CLI local mode generation
-- Web API URL mode generation
-- Web API ZIP mode generation
-
-CI runs on GitHub Actions in `.github/workflows/ci.yml`.
-
 ## Repository structure
 
 ```txt
@@ -156,20 +138,7 @@ CI runs on GitHub Actions in `.github/workflows/ci.yml`.
 ├── packages
 │   ├── core
 │   └── schemas
-├── scripts
-│   └── smoke.mjs
-└── .github/workflows/ci.yml
-```
-
-## Deploy to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin git@github.com:<your-user>/<repo>.git
-git push -u origin main
+└── README.md
 ```
 
 ## License
